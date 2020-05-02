@@ -1,0 +1,12 @@
+names = ["takudaddy", "siondaddy"]
+born_year=[1984,1988]
+wage_per_hour=347900
+worked=[9,8]
+info=[names, born_year, worked]
+
+info
+[['takudaddy', 'siondaddy'], [1984, 1988], [9, 8]]
+
+text= "{}년생 {}님은 오늘 총{}시간 근무하셨습니다. 오늘 일당은 {}원 입니다.".format(info[1][0], info[0][0], info[2][0], wage_per_hour*info[2][0])
+>>> text
+'1984년생 takudaddy님은 오늘 총9시간 근무하셨습니다. 오늘 일당은 3131100원 입니다.'
