@@ -1,0 +1,14 @@
+user_id = input ('정체를 밝히시오')
+user_id2 = input ('한번 더 밝히시오')
+user_pwd = input ('암구호를 대시오')
+
+if user_id == 'takudaddy':
+    if user_id2 == 'siondaddy':
+        if user_pwd == 'comehere':
+            print ('아이고 오셨습니까요 나으리')
+        else:
+            print ('뉘슈')
+    else:
+        print ('돌아가시오')
+else:
+    print('이 {} 새끼 여기가 어디라고 오니? 썩 {}'.format('종간나', '끄지라'))
