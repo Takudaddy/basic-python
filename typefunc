@@ -1,0 +1,15 @@
+>>> a+str(b)
+'Hello Takudaddy777'
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'int'>
+>>> type(a+str(b))
+<class 'str'>
+>>> type(len(a))
+<class 'int'>
+>>> user_id = input ("who is this?")
+who is this?
+>>> type (user_id)
+<class 'str'>
+>>>
