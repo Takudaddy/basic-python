@@ -1,0 +1,46 @@
+
+number : 4865321
+
+​
+
+if number != 0 :
+
+      print("처리를 한다")
+
+else :
+
+      print("0이 나왔습니다")
+
+​
+
+
+number : 4865321
+
+​
+
+if number :
+
+      print("처리를 한다")
+
+else :
+
+      print("0이 나왔습니다")
+
+​
+
+​
+
+
+message = " ";
+
+​
+
+if message !=" ";  :
+
+     print("처리를 한다")
+
+else:
+
+    print("메시지를 입력하세요")
+
+​
