@@ -1,0 +1,14 @@
+
+numbers = [88, 23, 245, 2, 99, 70, 77]
+
+holzzak = [ "짝수" , "홀수" ]
+
+ 
+
+ 
+
+for number in numbers:
+
+print(" { }는 { } 입니다".format (number, holzzak[number % 2]))
+
+ 
