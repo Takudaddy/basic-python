@@ -1,0 +1,11 @@
+﻿
+member_porint = [ 88, 133, 192, 217, 325]
+
+
+for numbers in member_porint:
+
+if numbers < 300:
+
+print (" - 회원 포인트 :", numbers, "점으로 골드 등급이시네요)
+
+﻿
