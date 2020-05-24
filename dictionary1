@@ -1,0 +1,12 @@
+kids = [
+    {"name" : "타쿠", "age" : 3},
+    {"name" : "시온", "age" : 1},
+    {"name" : "너구리", "age" : 2},
+    {"name" : "병아리", "age" : 4},
+]
+print ("# 우리 동네 꼬맹이들")
+for kid in kids:
+    print("{} {}살".format(kid["name"], kid["age"]))
+print()
+print()
+print()
