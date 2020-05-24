@@ -1,0 +1,20 @@
+character = {
+    "직업" : "마법사",
+    "level" : 89,
+    "items" : {
+         "지팡이" : "광마의지팡이",
+         "armor" : "카이저의 날개"
+          },
+    "skill" : ["카이저피닉스", "도르오라", "기가데인"]
+    }
+
+
+for key in character:
+    if type(character[key]) is dict:
+        for k in character[key]:
+            print("{} : {}".format(k, character[key][k]))
+    elif type(character[key]) is list:
+        for skills in (character[key]):
+            print("{} : {}".format(key, skills))
+    else:
+        print("{} : {}".format(key,character[key]))
