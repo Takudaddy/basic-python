@@ -1,0 +1,38 @@
+for i in range(8):
+    print(i)
+
+print()
+
+array = [77 ,45, 84 ,29, 7]
+
+i = 0
+for element in array:
+    print("{} : {}".format(i,element))
+    i += 1
+  # i = i + 1
+
+print()
+
+array = [77, 45, 84, 29, 7]
+
+for i, element in enumerate(array):
+    print("{} : {}".format(i, element) )
+print()
+
+
+
+array = [77, 45, 84, 29, 7]
+
+for i in range(len(array)):
+    print("{} : {}".format(i, array[i]))
+print()
+
+
+
+
+
+
+for i in reversed(range(4)):
+    print(i)
+
+
