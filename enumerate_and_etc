@@ -1,0 +1,88 @@
+
+
+a = [234, 46, 234, 6456, 477, 3554,]
+for i, element in enumerate(a):
+    print(i, element)
+
+
+a = {
+    "키1":"값1",
+    "키2":"값2",
+    "키3": "값3"
+}
+for key in a:
+    print(key) #키 가져올때
+    print(a[key]) #값 가져올때
+
+for key, value in a.items():
+    print(key,value)
+print()
+print()
+print()
+
+array = []
+for i in range(0,20,2):
+    array.append(i * i)
+print(array)
+
+array = [i * i for i in range(0,20,2)]
+print(array)
+print()
+print()
+print()
+
+
+array = [i for i in range(10) if i % 2 == 0]
+print(array)
+
+
+"{:b}".format(10)
+
+print()
+print()
+print()
+print()
+
+output = 0
+for i in range(101):
+    if "{:b}".format(i).count("0") == 1:
+        #print("{:b}".format(i))
+        print("{} : {:b}".format(i, i))
+        output += i
+print("합계: {}".format(output))
+print()
+print()
+
+output=[i for i in range(101) if "{:b}".format(i).count("0") == 1]
+for i in output:
+    print("{} : {}".format(i, "{:b}".format(i)))
+
+print("합계 : {}".format(sum(output)))
+
+
+def 함수명 (매개변수1, 매개변수2, 매개변수3, sample4):
+    print("샘플1 :", 매개변수1)
+    print("샘플2 :", 매개변수2)
+    print("샘플3 : " +  str(매개변수3))
+    print(sample4 + str(매개변수2))
+    return
+    print(매개변수1)
+
+함수명("인자1", 2, 3, "얌마")
+print()
+print()
+
+
+def time_n_times(value, n=3):
+    for i in range(n):
+        print(value, n)
+
+time_n_times("타쿠대디")
+
+
+
+def 매개변수(ex1, ex2, *가변매개변수) :
+    print(ex1)
+    print(ex2)
+    print(가변매개변수)
+매개변수( 1, 2, 3, 4, 5, 6, 7)
