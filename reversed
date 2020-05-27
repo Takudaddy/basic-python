@@ -1,0 +1,33 @@
+
+a = [0,1,2,3,4,5]
+reversed_a = reversed(a)
+print(reversed_a)
+
+a = [0,1,2,3,4,5]
+reversed_a = reversed(a)
+print(list(reversed_a))
+
+a = [0,1,2,3,4,5]
+reversed_a = reversed(a)
+
+for i in reversed_a:
+    print(i, end= " ")
+print()
+for i in reversed_a:
+    print(i, end=" ")
+print()
+print()
+print()
+print()
+
+a = [0,1,2,3,4,5]
+reversed_a = reversed(a)
+
+for i in reversed(a):
+    print(i, end= " ")
+print()
+for i in reversed(a):
+    print(i, end=" ")
+print()
+print()
+print()
