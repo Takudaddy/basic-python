@@ -1,0 +1,58 @@
+
+def function(일반매개,*가변매개,기본매개=10):
+    print(일반매개)
+    print(가변매개)
+    print(기본매개)
+function(0,1,2,3,4,5,6,7,기본매개=55)
+print()
+print()
+print("타쿠대디","시온대디","대디유댕",sep="||")
+print()
+print()
+print()
+
+def sum_all(start, end):
+    변수 = 0
+    for i in range(start, end + 1):
+        변수 += i
+    return 변수
+
+print(sum_all(5, 50))
+print(sum_all(50, 100))
+
+print()
+print()
+print()
+
+def add(a,b):
+    return a + b
+print(add(5,9))
+
+
+def add(a,b):
+    return a + b
+x = add(5,9)
+print(x)
+print()
+print()
+
+def f_1(x):
+    return (2 * x) + 1
+print(f_1(10))
+
+
+def f_2(x):
+    return (x ** 2) + (2 * x) +1
+print(f_2(10))
+print()
+print()
+
+
+def mul(*value):
+    변수 = 1
+    for i in value:
+        변수 *= i
+    return 변수
+
+print(mul(5,7,9,10))
+
