@@ -1,0 +1,28 @@
+a, b = 77, 33
+print(type(divmod(a, b)))
+print()
+print()
+
+'''
+list = [1,2,3,4,5,6,7]
+for i, value in enumerate(list):
+    print("{}번째 요소는 {}입니다".format(i,value))
+'''
+
+
+a = (333,)
+print(type(a))
+print()
+print()
+print()
+
+
+a = {
+    (0, 0): 10,
+    (0, 1): 20,
+    (1, 0): 30,
+    (1, 1): 40
+}
+
+print(a[(0,0)])
+print(a[0,0])
