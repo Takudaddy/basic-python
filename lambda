@@ -1,0 +1,51 @@
+
+def plus(x):
+    return x + 9
+plus(1)
+print(plus(1))
+
+
+plus_1= lambda x: x + 9
+print(plus_1(1))
+
+
+print()
+print()
+
+
+
+def even_number(number):
+    return number % 2 == 0
+
+a = list(range(101))
+b = filter(even_number, a)
+for i in b:
+    print(i)
+
+print()
+print()
+print()
+
+
+
+c = list(range(101))
+d = filter(lambda number: number % 2 == 0, c)
+print(list(d))
+print()
+print()
+print()
+
+
+
+
+print()
+print()
+
+
+
+
+
+a = list(range(50))
+print(list(map(lambda number: number * number, a)))
+
+print([i * i for i in a if i % 2 == 0])
