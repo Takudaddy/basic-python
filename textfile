@@ -1,0 +1,27 @@
+file = open("test.txt", "w")
+file.write("타쿠대디")
+file.close()
+
+
+with open("text.txt", "a") as file:
+    file.write("타쿠대디")
+
+file = open("test.txt", "a")
+file.write("타쿠대디")
+file.close()
+
+
+with open("text.txt", "r") as file:
+    print(file.read()
+
+file = open("test.txt", "r")
+print(file.read())
+file.close()
+
+
+with open("text.txt", "a") as file:
+    file.write("타쿠대디")
+
+'''
+
+
