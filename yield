@@ -1,0 +1,69 @@
+my_nums = square_numbers([1,2,3,4,5])
+
+print(my_nums)
+
+print()
+print()
+
+def 함수():
+    print("output A")
+    yield 77
+    print("output B")
+    yield 88
+    print("output c")
+    yield 99
+
+제너레이터 = 함수()
+for i in 제너레이터:
+    print(i)
+for i in 제너레이터:
+    print(i)
+
+
+print()
+print()
+
+
+
+
+
+
+list = [1,2,3,4,5]
+repeat = reversed(list)
+for i in repeat:
+    print(i)
+for i in repeat:
+    print(i)
+
+def 반전(리스트):
+    for i in range(len(리스트)):
+        yield 리스트[-i -1]
+
+제너레이터 = 반전([1,2,3,4,5])
+for i in 제너레이터:
+    print(i)
+print()
+print()
+
+
+
+
+
+numbers = [1,2,3,4,5,6]
+
+print("::".join(
+    map(str,numbers)
+     ))
+
+print()
+
+numbers = list(range(1,10+1))
+
+print("# 홀수만 추출하기")
+print(list(filter(lambda x: x % 2 == 1, numbers)))
+print()
+print("# 3 이상, 7 미만 추출하기")
+print(list(filter(lambda x: 3 <= x < 7, numbers)))
+print()
+print("# 제곱해서 50미만 추출하기")
+print(list(filter(lambda x: (x ** 2) < 50, numbers)))
