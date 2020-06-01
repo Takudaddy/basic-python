@@ -1,0 +1,39 @@
+while True:
+    user_input = input("정수만 입력하세요 : ")
+    if user_input.isdigit():
+        number_input = float(user_input)
+        print("원의 반지름 : ", number_input)
+        print("원의 둘레 : ", 2 * 3.14 * number_input)
+        print("원의 넓이 : ", 3.14 * number_input * number_input)
+        break
+    else:
+        print("정수를 입력하라고!")
+
+print()
+print()
+
+
+while True:
+    try:
+        print(float(input("숫자를 입력하시오 :")) **2)
+        break
+    except:
+        pass
+
+
+#먼저 변수를 선언
+list_input = ["33", "44", "x맨", "55"]
+#다음 반복을 적용
+list_numbers = []
+for number in list_input:
+    #숫자로 변환해 리스트에 추가
+    try:
+        float(number) #예외가 발생하면 진행안됨
+        list_numbers.append(number) #위를 통과했으면 리스트에 넣어줘!
+    except:
+        pass
+#최종출력
+print("{} 내부에 있는 숫자는".format(list_input))
+print("{} 입니다.".format(list_numbers))
+print()
+print()
