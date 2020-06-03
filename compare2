@@ -1,0 +1,27 @@
+
+def 학생_정보(name, Korean, English, Math, Music):
+    return {
+        "name" : name,
+        "Korean" : Korean,
+        "English" : English,
+        "Math" : Math,
+        "Music": Music
+    }
+def 총점(student):
+    return student["Korean"] + student["English"] +\
+           student["Math"] + student["Music"]
+def 평균(student):
+    return 총점(student) / 4
+def 출력(student):
+    print(student["name"], 총점(student), 평균(student), sep="\t")
+
+#------------------------------------------------------------------------
+
+students = [
+    학생_정보("타쿠대디", 96,  89, 91,  99 ),
+    학생_정보("시온대디", 95,  88, 93,  89 ),
+    학생_정보("대디유댕", 97,  85, 92,  94)
+  ]
+print("이름", "총점", "평균", sep="\t")
+for student in students:
+    출력(student)
