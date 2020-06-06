@@ -1,0 +1,35 @@
+lass Rect:
+   def __init__(self, width, height):
+       if width <= 0:
+           raise Exception("음수가 올 수 없습니다")
+       self.__width = width
+       self.__height = height
+
+
+#게터세터 + 세터에 조건문
+   def get_width(self):
+       return self.__width
+   def set_width(self, width):
+       if height <= 0:
+           raise Exception("음수가 올 수 없습니다")
+       self.__height = height
+
+
+#게터세터 + 세터에 조건문
+   def get_height(self):
+       return self.__height
+   def set_height(self, height):
+       if width <= 0 or height <= 0:
+           raise Exception("음수가 올 수 없습니다")
+       self.__width = width
+
+
+   def get_area(self):
+       return self.__width * self.__height
+
+
+rect = Rect(-25,25)
+print(rect.__width)
+
+rect.__width = -25
+print(rect.get_area())
