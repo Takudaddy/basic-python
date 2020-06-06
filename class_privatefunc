@@ -1,0 +1,15 @@
+class Rect:
+   def __init__(self, width, height):
+       if width <= 0 or height <= 0:
+           raise Exception("음수가 올 수 없습니다")
+       self.__width = width
+       self.__height = height
+
+   def get_area(self):
+       return self.__width * self.__height
+
+rect = Rect(-25,25)
+print(rect.__width)
+
+rect.__width = -25
+print(rect.get_area())
