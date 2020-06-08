@@ -1,0 +1,17 @@
+
+
+import sys
+
+print(sys.argv)
+
+
+
+
+
+'''
+print()
+from urllib import request
+target = request.urlopen("https://google.com")
+content = target.read()
+
+print(content[:100])'''
