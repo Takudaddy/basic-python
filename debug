@@ -1,0 +1,62 @@
+
+'''
+import sys
+print(sys.argv)
+
+import datetime
+now = datetime.datetime.now()
+print(now)
+
+from datetime import datetime
+
+now = datetime(2004,6,30)
+print(now.year)
+print(now.month)
+print(now.day)
+print(now.hour)
+print(now.minute)
+print(now.second)
+print()
+
+import time
+
+print("A")
+time.sleep(2)
+print("B")
+print()
+print()
+
+
+from urllib import request
+target = request.urlopen("https://google.com")
+content = target.read()
+
+print(content[:200])
+
+
+import os
+
+output = os.listdir()
+print("os.listdir():", output)
+print()
+
+print("#폴더와 파일 구분하기")
+for path in output:
+    if os.path.isdir(path):
+        print("폴더:", path)
+    else:
+        print("파일", path)
+'''
+import os
+
+#폴더를 읽어 들이는 함수
+def read_folder(path):
+    print(path)
+    output = os.listdir(path)
+    #폴더의 요소 구분하기
+    for item in output:
+        if os.path.isdir(path + "/" + item):
+            read_folder(path + "/" + item)
+        else:
+            pass
+read_folder(".")
