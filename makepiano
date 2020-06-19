@@ -1,0 +1,14 @@
+from tkinter import *
+import time
+import datetime
+import pygame
+
+pygame.init()
+root = TK()
+root.title("Music Box")
+root.geometry('1352x700+0+0')
+root.config(background = "white")
+
+
+
+root.mainloop()
